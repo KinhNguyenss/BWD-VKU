@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./assets/css/Trangchu.css" />
+    <link rel="stylesheet" src="./trangchu.js" />
+    <link rel="icon" type="image/x-icon" href="assets/img/mentor.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body id="top">
+    <div class="container">
+        <div id="header" data-header>
+          <div class="navbar">
+            <div class="logo">
+              <a href="./index.html"
+                ><img src="./assets/img/logo.png" alt=""
+              /></a>
+            </div>
+
+            <ul class="links">
+              <a href="#"><li>Trang chủ</li></a>
+              <a href="./DangKyMentor.html"><li>Đăng ký Mentor</li></a>
+              <a href="#timkiem"><li>Tìm kiếm Mentor</li></a>
+              <a href="./PublicVKU.html"><li>Cộng đồng</li></a>
+              <a href="./HopTac.html"><li>Hợp tác</li></a>
+              <a href="./DanhGia.html"><li>Đánh giá</li></a>
+              <a href="#site-footer"><li>Liên Hệ</li></a>
+            </ul>
+            <a class="action_btn" href="./Login.html"> BẮT ĐẦU </a>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- Dropnav -->
+            <div class="dropdown_menu">
+              <li>
+                <a href="#"><li>Trang chủ</li></a>
+              </li>
+              <li>
+                <a href="./DangKyMentor.html"><li>Đăng ký Mentor</li></a>
+              </li>
+              <li>
+                <a href="#timkiem"><li>Tìm kiếm Mentor</li></a>
+              </li>
+              <li>
+                <a href="./PublicVKU.html"><li>Cộng đồng</li></a>
+              </li>
+              <li>
+                <a href="./HopTac.html"><li>Hợp tác</li></a>
+              </li>
+              <li>
+                <a href="./DanhGia.html"><li>Đánh giá</li></a>
+              </li>
+              <li>
+                <a href="#site-footer"><li>Liên hệ</li></a>
+              </li>
+              <li>
+                <a class="action_btn2" href="./Login.html">BẮT ĐẦU</a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="content display-container">
+
+          <section id="hero1" class="mySlides hero fade-in">
+              <div class="inner">    
+                
+                <img src="assets/img/bg2.jpg" alt="">
+                
+              <div class="copyLogo slide-tekst">
+
+              </div>
+            </div>
+          </section>  
+            
+          <section id="hero2" class="mySlides hero fade-in">
+            <div class="inner">
+
+              <img src="assets/img/bg8.jpg" alt="">
+          
+              <div class="copy slide-tekst">
+                   <div class="ast-col-md-6 elbillader-banner">
+                  <h2>
+                    
+                  </h2>
+                  
+                  </div>
+              </div>
+            </div>
+            
+          </section>  
+            
+          <section id="hero3" class="mySlides hero fade-in">
+                <div class="inner">
+
+                  <img src="assets/img/bg4.jpg" alt="">
+          
+                  <div class="copy slide-tekst">
+                      <div class="ast-col-md-6 elbillader-banner">
+                  <h2>
+                     
+                  </h2>
+                  
+                  </div>
+                  </div>
+                </div>
+          </section>
+          
+          
+          
+          
+          
+          
+            
+          
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            
+          <span class="w3-badge demo demo-1 w3-border w3-transparent w3-hover-white" id="badge1" onclick="currentDiv(1)">
+            </span>
+          <span class="w3-badge demo demo-2 w3-border w3-transparent w3-hover-white" id="badge2" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo demo-3 w3-border w3-transparent w3-hover-white" id="badge3" onclick="currentDiv(3)"></span>
+          
+          </div>
+
+          <div id="mentorModal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <iframe src="./DangKyMentor.html" style="width:100%; height: 900px; border:none;"></iframe>
+            </div>
+          </div>
+    <div id="timkiem"></div>
+    <div id="findmentor">
+      <div class="find__mentor__text">
+        <p class="title_4">Tìm kiếm Mentor</p>
+        <input type="text" class="EnterName" placeholder="Nhập tên Mentor" />
+      </div>
+      <!-- <input type="text" placeholder="Khoa"> -->
+      <select name="Khoa" id="Khoa" class="Khoa">
+        <option value="Khoa">Chọn Khoa</option>
+        <option value="Khoa học máy tính">Khoa học máy tính</option>
+        <option value="Kỹ thuật điện tử">Kỹ thuật điện tử</option>
+        <option value="Kinh tế số và thương mại">
+          Kinh tế số và Thương mại
+        </option>
+      </select>
+
+      <!-- <input type="text" placeholder="Ngành">  -->
+      <select name="Ngành" id="Ngành" class="Ngành">
+        <option value="Ngành">Chọn Ngành</option>
+        <option value="Khoa học máy tính">Khoa học máy tính</option>
+        <option value="Kỹ thuật điện tử">Kỹ thuật điện tử</option>
+        <option value="Kinh tế số và thương mại">
+          Kinh tế số và Thương mại
+        </option>
+      </select>
+      <!-- <input type="text" placeholder="Môn"> -->
+      <select name="Môn" id="Môn" class="Môn">
+        <option value="Môn">Môn</option>
+        <option value="Lập trình cơ bản">Lập trình cơ bản</option>
+        <option value="Lập trình Java">Lập trình Java</option>
+        <option value="Kinh tế số và thương mại">
+          Kinh tế số và Thương mại
+        </option>
+      </select>
+      <button class="find">Tìm kiếm</button>
+    </div>
+
+    <div class="mentor-text">
+     Mentor nổi bật <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+    <div class="container-slider">
+      <div class="slider">
+          <div class="slide">
+            <a href="/PublicVKU.html">
+            <div class="card">
+            <img class="card-img" src="assets/img/NQK.jpg" alt="">
+            <div class="card-body">
+                <h1 class="card-title">TTTT</h1>
+                <p class="card-sub-title">Thanh Thao</p>
+            </div>
+        </div>
+      </a>
+      </div>
+          <div class="slide"><a href="TTMentor.html"><img class="img__slider--sub" src="./assets/img/HDN.jpg" alt=""></a></div>
+          <div class="slide"><a href="index.html"><img class="img__slider--sub" src="./assets/img/TTTT.jpg" alt="" ></a></div>
+          <div class="slide"><div class="card">
+            <img class="card-img" src="assets/img/NQK.jpg" alt="">
+            <div class="card-body">
+                <h1 class="card-title">TTTT</h1>
+                <p class="card-sub-title">Thanh Thao</p>
+            </div>
+        </div></div>
+          <div class="slide"><a href=""><img class="img__slider--sub" src="./assets/img/TAT.jpg" alt=""></a></div>
+          <div class="slide"><a href=""><img class="img__slider--sub" src="./assets/img/DTDH.jpg" alt=""></a></div>
+          <div class="slide"><a href=""><img class="img__slider--sub" src="./assets/img/VTTH.jpg" alt=""></a></div>
+
+      </div>
+
+      <div class="control-slider">
+          <i class="fa-solid fa-circle-left" id="arrow-left"></i>
+          <i class="fa-solid fa-circle-right" id="arrow-right"></i>
+      </div>
+      
+  </div>
+
+  <div class="mentor-text">
+    Mới cập nhật <i class="fa-solid fa-arrow-right"></i>
+  </div>
+    <div>
+      <div class="ImageVkuMentor">
+        <button><a href="./TTMentor.html"><img class="img-Mentor" src="./assets/img/HDN.jpg" alt="" /></a></button>
+        <button><img class="img-Mentor" src="./assets/img/NQK.jpg" alt="" /></button>
+        <button><a href="./index.html"><img class="img-Mentor" src="./assets/img/TTTT.jpg" alt="" /></a></button>
+        <button><img class="img-Mentor" src="./assets/img/PQV.jpg" alt="" /></button>
+        <button><img class="img-Mentor" src="./assets/img/DTDH.jpg" alt="" /></button>
+        <button><img class="img-Mentor" src="./assets/img/VTTH.jpg" alt="" /></button>
+        <button>  
+          <a href="/DanhGia.html">       
+        <div class="card">
+          <img class="card-img" src="assets/img/NQK.jpg" alt="">
+          <div class="card-body">
+              <h1 class="card-title">TTTT</h1>
+              <p class="card-sub-title">Thanh Thao</p>
+          </div>
+      </div>
+    </a> 
+    </button>
+        <button>          <div class="card">
+          <img class="card-img" src="assets/img/NQK.jpg" alt="">
+          <div class="card-body">
+              <h1 class="card-title">TTTT</h1>
+              <p class="card-sub-title">Thanh Thao</p>
+          </div>
+      </div>
+    </button>
+      </div>
+    </div>
+    <div class="fix-xemthem">
+    <button class="xemthem">
+      Xem thêm <i class="fa-solid fa-arrow-down"></i>
+    </button>
+  </div>
+    <!-- các hoạt đông của VKU Mentor  -->
+
+    <div class="mentor-text">
+      Hoạt động nổi bật <i class="fa-solid fa-arrow-right"></i>
+     </div>
+
+     <div class="activity">
+      <div class="acvtivity--content">
+        <img src="/assets/img/tintuc3.jpg" alt="">
+        <p class="acvtivity--content__title">
+          Hào hứng ngày hội nhập học đợt 2 của các tân sinh viên VKU
+        </p>
+      </div>
+      <div class="acvtivity--content">
+        <img src="/assets/img/logocopy.png" alt="">
+        <p class="acvtivity--content__title">
+          VKU Mentor được thành lập
+        </p>
+      </div>
+      <div class="acvtivity--content">
+        <img src="/assets/img/tintuc2.jpg" alt="">
+        <p class="acvtivity--content__title">
+           Hợp tác giữa VKU và Công ty LG Electronics Việt Nam
+        </p>
+      </div>
+      <div class="acvtivity--content">
+        <img src="/assets/img/tintuc3.jpg" alt="">
+        <p class="acvtivity--content__title">
+          Hào hứng ngày hội nhập học đợt 2 của các tân sinh viên VKU
+        </p>
+      </div>
+     </div>
+
+     <!-- end hoạt động  -->
+
+     <!-- hợp tác  -->
+     <div class="mentor-text">
+      Các đơn vị hợp tác <i class="fa-solid fa-arrow-right"></i>
+     </div>
+     <div class="hoptac">
+      <div class="hoptac--title">
+        Hệ sinh thái Đại học Đà Nẵng
+      </div>
+        <div class="hoptac--content">
+          <img src="/assets/img/hoptac.png" alt="">
+        </div>
+     </div>
+      <!-- end hợp tác  -->
+
+     <!-- các khóa học nổi bật của Mentor  -->
+
+      <!-- end khóa học -->
+      <div class="mentor-text">
+        Các khóa học nổi bật của Mentor <i class="fa-solid fa-arrow-right"></i>
+       </div>
+     <!-- trải nghiệm của mentor mentee  -->
+     <div class="mentor-text">
+      Trải nghiệm của Mentor và Mentee <i class="fa-solid fa-arrow-right"></i>
+     </div>
+     <div class="trainghiem">
+      <div class="blog-card">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(/assets/img/NQK-Bg.jpg)"
+          ></div>
+          <ul class="details">
+            <li class="author">Nguyễn Quang Kính</li>
+            <li class="date">26/07/2024</li>
+            <li class="tags">
+              <ul>
+                <li>Mentee</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Nguyễn Quang Kính</h1>
+          <h2>Những trải nghiệm khi làm việc với mentor</h2>
+          <p>
+            Mentor dễ tiếp cận và cởi mở, phản hồi nhanh chóng và cung cấp thông
+            tin hữu ích. Với kiến thức chuyên môn vững chắc và kinh nghiệm thực
+            tiễn, mentor đưa ra những lời khuyên chính xác và thiết thực. Họ cung
+            cấp lộ trình và kế hoạch phát triển cụ thể, động viên và khích lệ
+            mentee, giúp tôi tự tin và kiên định hơn trong quá trình phát triển.
+          </p>
+        </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(/assets/img/HDN.png)"
+          ></div>
+          <ul class="details">
+            <li class="author">Huỳnh Đức Nhật</li>
+            <li class="date">03/08/2024</li>
+            <li class="tags">
+              <ul>
+                <li>Mentee</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Huỳnh Đức Nhật</h1>
+          <h2>Trải nghiệm khi sử dụng website</h2>
+          <p>
+            Giao diện người dùng trực quan, dễ sử dụng, và thiết kế hấp dẫn giúp
+            người dùng nhanh chóng tìm kiếm và truy cập thông tin cần thiết. Tính
+            năng tìm kiếm mạnh mẽ và hồ sơ mentor chi tiết hỗ trợ người dùng chọn
+            lựa mentor phù hợp.
+          </p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(/assets/img/ThanhThao.png)"
+          ></div>
+          <ul class="details">
+            <li class="author">Trịnh Thị Thanh Thảo</li>
+            <li class="date">17/06/2024</li>
+            <li class="tags">
+              <ul>
+                <li>Mentor</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Trịnh Thị Thanh Thảo</h1>
+          <h2>Những trải nghiệm khi làm việc và sử dụng website</h2>
+          <p>
+            Công cụ hỗ trợ trực tuyến và tài liệu hướng dẫn chi tiết giúp mentor
+            giải quyết các vấn đề phát sinh một cách nhanh chóng. Nhìn chung,
+            website cung cấp một môi trường làm việc tiện lợi và chuyên nghiệp,
+            giúp mentor tập trung vào việc chia sẻ kiến thức và hỗ trợ mentee hiệu
+            quả.
+          </p>
+        </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(/assets/img/PQV.jpg)"
+          ></div>
+          <ul class="details">
+            <li class="author">Phạm Quốc Việt</li>
+            <li class="date">03/05/2024</li>
+            <li class="tags">
+              <ul>
+                <li>Mentor</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Phạm Quốc Việt</h1>
+          <h2>Những lợi ích khi trở thành Mentor</h2>
+          <p>
+            Sau khi làm mentor, tôi đã phát triển kỹ năng cá nhân và chuyên môn,
+            mở rộng mạng lưới quan hệ, cảm thấy thỏa mãn vì đóng góp, và giúp đỡ
+            những người đang gặp khó khăn.
+          </p>
+        </div>
+      </div>
+     </div>
+     <div class="fix-xemthem">
+      <button class="xemthem">
+        Xem thêm  <i class="fa-solid fa-arrow-down"></i>
+      </button>
+    </div>
+     <!-- end trải nghiệm  -->
+        <div id="map">
+          <!-- <img
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7333963918245!2d108.24978007447882!3d15.975293084690627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1715835773537!5m2!1svi!2s"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              alt="map"
+              class="map"
+            /> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7333963918245!2d108.24978007447882!3d15.975293084690627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1715835773537!5m2!1svi!2s"
+            style="border: 0; width: 100%; height: 350px; border-radius: 5px; "
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- Site footer -->
+    <footer id="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <img
+              class="logo-img"
+              src="./assets/img/logo.png"
+              alt=""
+            />
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <ul class="footer-links">
+              <li>
+                <div class="tieude">Đường dẫn nhanh</div>
+              </li>
+              <li>
+                <a href="./index.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="./DangKyMentor.html"
+                  >Đăng ký mentor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./PublicVKU.html"
+                  >Cộng đồng</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  >Liên hệ hợp tác</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  >Góp ý phản hồi</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div class="tieude">Liên hệ</div>
+            <ul class="footer-links lienhe">
+              <li><div class="phude">VKU Mentor</div></li>
+              <li>
+                Địa điểm: 470 Trần Đại Nghĩa, Hòa Quý,<br> Ngũ Hành Sơn, Đà Nẵng
+              </li>
+              <li>Số điện thoại: (+84) 012345678</li>
+               Email: [vku.mentor@gmail.com](mailto:vku.mentor@gmail.com)
+              </li>
+          </div>
+        </div>
+       <hr>
+      </div> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              <div class="copyright">&#169; </div>
+              2024 VKU Mentor được xây dựng và phát triển bởi <br>Kính, Thảo, Việt, Nhật 
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+              </li>
+              <li>
+                <a class="dribbble" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up-outline" aria-hidden="true"><i class="fa-solid fa-arrow-up"></i></ion-icon>
+      </a>
+    
+      <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/6645f41e9a809f19fb317f15/1hu0k36ir";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <script>//<![CDATA[
+var _widget_settings = {
+  positions: 'bottom right',
+  support: {
+    staff: {
+      name: 'VKUMentor',
+      image: 'https://cdn.jsdelivr.net/gh/thietkeblogspot/images/staff.png',
+      messages: 'Không biết chúng tôi có thể hỗ trợ gì cho anh/chị không ạ?'
+    }
+  },
+  buttons: {
+    contact: {
+      visible: 'true',
+      id: 'https://vku.udn.vn/',
+      messages: 'Liên hệ'
+    },
+    email: {
+      visible: 'true',
+      id: 'trinhthanhthao2k5@gmail.com',
+      messages: 'Gửi email'
+    },
+    call: {
+      visible: 'true',
+      id: '0396688272',
+      messages: 'Gọi điện'
+    },
+    sms: {
+      visible: 'true',
+      id: '0396688274',
+      messages: 'Nhắn tin'
+    },
+    viber: {
+      visible: 'false',
+      id: 'vhost.vn',
+      messages: 'Chat Viber'
+    },
+    telegram: {
+      visible: 'false',
+      id: 'vHostbot',
+      messages: 'Chat Telegram'
+    },
+    zalo: {
+      visible: 'true',
+      id: '0375613351',
+      messages: 'Chat Zalo'
+    },
+    facebook: {
+      visible: 'true',
+      id: 'thietkeblogspot',
+      messages: 'Chat Facebook'
+    }
+  }
+}
+//]]></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script src='https://cdn.jsdelivr.net/gh/thietkeblogspot/js/contact-buttons-widget.min.js'></script>
+
+  </body>
+  <script src="./Javascript/js.js"></script>
+</html>
